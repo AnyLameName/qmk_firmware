@@ -26,6 +26,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MASTER_RIGHT
 // #define EE_HANDS
 
-#define RGBLIGHT_DEFAULT_HUE 180
-#define RGBLIGHT_DEFAULT_SAT UINT8_MAX / 2 
-#define RGBLIGHT_DEFAULT_VAL RGBLIGHT_LIMIT_VAL
+#ifdef RGBLIGHT_ENABLE
+    #define RGBLIGHT_DEFAULT_HUE 180
+    #define RGBLIGHT_DEFAULT_SAT UINT8_MAX / 2 
+    #define RGBLIGHT_DEFAULT_VAL RGBLIGHT_LIMIT_VAL
+#endif
